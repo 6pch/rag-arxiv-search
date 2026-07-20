@@ -48,8 +48,7 @@ chunking, embeddings, vector store, generación aumentada y **evaluación cuanti
 | Tests                 | Pytest                                   |
 | CI                     | GitHub Actions                          |
 
-## Por qué estas decisiones (documentar esto en el README real es lo que impresiona)
-
+## DOCU
 - **Chunking recursivo con overlap del 15%**: los papers científicos tienen estructura densa
   (fórmulas, referencias cruzadas); un chunk demasiado pequeño rompe el contexto matemático,
   uno demasiado grande diluye la relevancia del embedding. Se comparan 3 tamaños en `eval/`.
