@@ -15,14 +15,14 @@ chunking, embeddings, vector store, generación aumentada y **evaluación cuanti
 
 ```
 ┌─────────────┐    ┌──────────────┐    ┌───────────────┐    ┌──────────────┐
-│  Ingesta     │───▶│  Chunking     │───▶│  Embeddings +  │───▶│  Vector Store │
-│  (arXiv API) │    │  (recursive/  │    │  indexado      │    │  (Chroma)     │
-│  + PDF parse │    │   semantic)   │    │                │    │               │
+│  Ingesta     │───▶│  Chunking     │───▶│  Embeddings +  │───▶ Vector Store│
+│  (arXiv API) │    │  (recursive/  │    │  indexado      │    │  (Chroma) │
+│  + PDF parse │    │   semantic)   │    │                │    │           │
 └─────────────┘    └──────────────┘    └───────────────┘    └───────┬──────┘
-                                                                      │
+                                                                    │
 ┌──────────────┐    ┌───────────────┐    ┌────────────────┐         │
-│  Streamlit UI │◀───│  RAG Chain     │◀───│  Retriever      │◀────────┘
-│               │    │  (LLM + prompt)│    │  (top-k + rerank)│
+│  Streamlit UI │◀───│  RAG Chain  │◀───│  Retriever  │◀────────┘
+│               │    │(LLM + prompt)│    │ (top-k + rerank)│
 └──────────────┘    └───────┬───────┘    └────────────────┘
                               │
                      ┌────────▼────────┐
