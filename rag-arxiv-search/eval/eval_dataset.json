@@ -1,0 +1,14 @@
+[
+  {
+    "question": "¿Qué es el mecanismo de self-attention y qué problema resuelve frente a las RNN?",
+    "ground_truth": "Self-attention permite a un modelo ponderar la relevancia de cada token respecto a todos los demás en una secuencia de forma paralela, evitando el procesamiento secuencial de las RNN y mitigando el problema de dependencias a largo plazo."
+  },
+  {
+    "question": "¿Cuáles son las principales técnicas para reducir el sobreajuste (overfitting) en redes neuronales profundas?",
+    "ground_truth": "Entre las técnicas más comunes están dropout, regularización L2, data augmentation, early stopping y batch normalization."
+  },
+  {
+    "question": "¿Qué ventajas ofrece el fine-tuning eficiente (como LoRA) frente al fine-tuning completo de un modelo grande?",
+    "ground_truth": "LoRA reduce drásticamente el número de parámetros entrenables al introducir matrices de bajo rango, disminuyendo el coste computacional y de memoria manteniendo un rendimiento comparable al fine-tuning completo."
+  }
+]
