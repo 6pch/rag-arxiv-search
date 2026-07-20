@@ -84,7 +84,7 @@ streamlit run app/main.py
 python -m src.evaluate --eval-set eval/eval_dataset.json
 ```
 
-## Resultados de evaluación (ejemplo — reemplaza con tus números reales)
+## Resultados de evaluación 
 
 | Métrica              | Chunk 256 tokens | Chunk 512 tokens | Chunk 1024 tokens |
 |-----------------------|:---:|:---:|:---:|
@@ -95,7 +95,7 @@ python -m src.evaluate --eval-set eval/eval_dataset.json
 
 > Ejecuta `python -m src.evaluate --sweep` para regenerar esta tabla con tus propios datos.
 
-## Roadmap / posibles extensiones (buenas para hablar en entrevista)
+## Roadmap / posibles extensiones 
 
 - [ ] Re-ranking con cross-encoder tras la recuperación inicial
 - [ ] Hybrid search (BM25 + embeddings)
